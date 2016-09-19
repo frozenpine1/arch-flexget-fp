@@ -4,7 +4,7 @@
 set -e
 
 # define pacman packages
-pacman_packages="python2 python2-pip rar"
+pacman_packages="python2 python2-pip unrar"
 
 # install pre-reqs
 pacman -Sy --needed $pacman_packages --noconfirm
