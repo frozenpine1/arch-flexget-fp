@@ -4,7 +4,7 @@
 set -e
 
 # define pacman packages
-pacman_packages="python2 python2-pip unrar deluge-common"
+pacman_packages="python2 python2-pip unrar deluge"
 
 # install pre-reqs
 pacman -Sy --needed $pacman_packages --noconfirm
