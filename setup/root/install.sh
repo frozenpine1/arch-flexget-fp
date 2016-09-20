@@ -9,6 +9,7 @@ pacman_packages="python2 python2-pip unrar deluge"
 # install pre-reqs
 pacman -Sy --needed $pacman_packages --noconfirm
 pip2 install --upgrade setuptools
+pip2 install --upgrade simple_persistence
 pip2 install service_identity
 pip2 install flexget
 pip2 install transmissionrpc
