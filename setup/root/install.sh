@@ -14,6 +14,7 @@ pip2 install flexget
 pip2 install transmissionrpc
 pip2 install deluge
 pip2 install rarfile
+pip2 install subliminal
 
 # call aor script (arch official repo)
 # source /root/aur.sh
