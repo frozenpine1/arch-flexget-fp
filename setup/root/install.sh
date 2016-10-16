@@ -15,6 +15,7 @@ pip2 install transmissionrpc
 pip2 install deluge
 pip2 install rarfile
 pip2 install subliminal
+pip2 install irc_bot
 
 # call aor script (arch official repo)
 # source /root/aur.sh
