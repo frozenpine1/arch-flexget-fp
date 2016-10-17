@@ -4,6 +4,7 @@ MAINTAINER none
 ADD setup/*.conf /etc/supervisor/conf.d/
 ADD setup/root/*.sh /root/
 ADD setup/root/*.yml /root/
+ADD setup/root/cronJobs /root/
 ADD apps/nobody/*.sh /home/nobody/
 
 RUN chmod +x /root/*.sh /home/nobody/*.sh && \
@@ -14,4 +15,3 @@ VOLUME ["/mnt"]
 
 EXPOSE 3539/tcp
 CMD ["/bin/bash", "/root/init.sh"]
-
