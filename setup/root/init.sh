@@ -52,7 +52,6 @@ else
   echo "Creating cronJobs from template."
   cp /root/cronJobs  /config/cronJobs
   chown nobody:users /config/cronJobs
-  chmod +x /config/cronJobs
 fi
 
 # set permissions inside container
@@ -62,7 +61,8 @@ chmod -R 775 /home/nobody /config
 echo "[info] Starting crond..."
 # run crond
 /usr/sbin/crond
-
+/usr/sbin/crontab /config/cronJobs
+  
 echo "[info] Starting Supervisor..."
 
 # run supervisor
