@@ -45,10 +45,23 @@ else
   chown nobody:users /config/config.yml
   chmod +x /config/config.yml
 fi
+# Check if cronJobs exists. If not, copy in
+if [ -f /config/cronJobs ]; then
+  echo "Using existing cronJobs file."
+else
+  echo "Creating cronJobs from template."
+  cp /root/cronJobs  /config/cronJobs
+  chown nobody:users /config/cronJobs
+  chmod +x /config/cronJobs
+fi
 
 # set permissions inside container
 chown -R "${PUID}":"${PGID}" /config
 chmod -R 775 /home/nobody /config
+
+echo "[info] Starting crond..."
+# run crond
+/usr/sbin/crond
 
 echo "[info] Starting Supervisor..."
 
