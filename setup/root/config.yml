@@ -1,8 +1,7 @@
 web_server:
   bind: 0.0.0.0
   port: 3539
-api: yes
-webui: yes
+  web_ui: yes
 
 tasks:
   task name:
