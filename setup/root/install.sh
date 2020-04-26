@@ -4,19 +4,18 @@
 set -e
 
 # define pacman packages
-pacman_packages="python2 python2-pip unrar deluge lynx links cronie mime-types wget"
+pacman_packages="python python-pip unrar deluge lynx links cronie mime-types wget"
 
 # install pre-reqs
 pacman -Sy --needed $pacman_packages --noconfirm
-pip2 install --upgrade setuptools
-pip2 install --upgrade pip
-pip2 install service_identity
-pip2 install flexget
-pip2 install transmissionrpc
-pip2 install deluge
-pip2 install rarfile
-pip2 install subliminal
-pip2 install irc_bot
+pip install --upgrade setuptools
+pip install --upgrade pip
+pip install service_identity
+pip install flexget
+pip install deluge
+pip install rarfile
+pip install subliminal
+pip install irc_bot
 
 # call aor script (arch official repo)
 # source /root/aur.sh
