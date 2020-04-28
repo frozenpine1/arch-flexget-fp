@@ -13,6 +13,7 @@ pip install --upgrade pip
 pip install service_identity
 pip install flexget
 pip install deluge
+pip install deluge-client
 pip install rarfile
 pip install subliminal
 pip install irc_bot
