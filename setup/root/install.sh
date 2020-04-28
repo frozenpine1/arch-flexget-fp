@@ -4,7 +4,7 @@
 set -e
 
 # define pacman packages
-pacman_packages="python python-pip unrar deluge lynx links cronie mime-types wget"
+pacman_packages="python python-pip unrar deluge lynx links cronie mime-types wget diffutils"
 
 # install pre-reqs
 pacman -Sy --needed $pacman_packages --noconfirm
