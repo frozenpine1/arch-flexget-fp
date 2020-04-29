@@ -10,6 +10,7 @@ pacman_packages="python python-pip unrar deluge lynx links cronie mime-types wge
 pacman -Sy --needed $pacman_packages --noconfirm
 pip install --upgrade setuptools
 pip install --upgrade pip
+pip install wheel
 pip install service_identity
 pip install flexget
 pip install deluge
